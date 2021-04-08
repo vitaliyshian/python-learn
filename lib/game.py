@@ -75,25 +75,43 @@ cards = [
 ]
 
 def play():
-    start_game()
+    print_menu()
+    game["deck"] = get_deck()
     player_turn()
 
+    if bust(player["cards_on_hands"]):
+        print("============================================")
+        print("Game Over YOU LOSE!!! :)")
+        print("============================================")
+        return
+
+    computer_turn()
+    player_win, computer_player_win = compare_cards()
+    print_computer_cards()
+
+    print("============================================")
+    if player_win > computer_player_win:
+        print("Вы победили!!!")
+    elif computer_player_win > player_win:
+        print("Game Over YOU LOSE!!! :)")
+    else:
+        print("Ничья Братан!!! :)")
+    print("============================================")
+
 def player_turn():
-    value = sum(player["cards_on_hands"])
-    print(value)
+    answer = "yes"
+    player["cards_on_hands"].append(game["deck"].pop())  # Ложим 2 карту в руки пользователя
+
+    while answer[0].lower() == "y":
+        player["cards_on_hands"].append(game["deck"].pop())  # Ложим 1 карту в руки пользователя
+        print_player_cards()
+        if bust(player["cards_on_hands"]) or black_jack(player["cards_on_hands"]):
+            break
+        answer = input("Вам нужна еще карта?: ")
 
 def computer_turn():
-    return None
-
-def start_game():
-    print_menu()# Вызов функции print_menu()
-    game["deck"] = get_deck()
-    player["cards_on_hands"].append(game["deck"].pop())# Ложим 1 карту в руки пользователя
-    player["cards_on_hands"].append(game["deck"].pop())# Ложим 2 карту в руки пользователя
-
-    computer_player["cards_on_hands"].append(game["deck"].pop())  # Ложим 1 карту в руки computer_player
-    computer_player["cards_on_hands"].append(game["deck"].pop())  # Ложим 2 карту в руки computer_player
-    print_player_cards()
+    while eval_aces(computer_player["cards_on_hands"]) < 18:
+        computer_player["cards_on_hands"].append(game["deck"].pop())  # Ложим 2 карту в руки computer_player
 
 def get_deck():
     deck = []
@@ -158,3 +176,73 @@ def eval_aces(hand):
             value = sum(hand)
     return value
 
+def black_jack(hand):
+    value = eval_aces(hand)
+    if value == 21:
+        return True
+    else:
+        return False
+
+def bust(hand):
+    value = eval_aces(hand)
+    if value > 21:
+        return True
+    else:
+        return False
+
+def balance(player, val):
+    player["balance"] = player["balance"] + val
+    return player["balance"]
+
+def compare_cards():
+    player_win = 0
+    computer_player_win = 0
+    # Получение очков играков
+    player_scores = eval_aces(player["cards_on_hands"])
+    computer_player_scores = eval_aces(computer_player["cards_on_hands"])
+
+    # проверка на проиграш
+    is_player_busted = bust(player["cards_on_hands"])
+    is_computer_player_busted = bust(computer_player["cards_on_hands"])
+
+    # проверка на black jack
+    is_player_black_jack = black_jack(player["cards_on_hands"])
+    is_computer_player_black_jack = black_jack(computer_player["cards_on_hands"])
+
+    if is_player_busted:
+        if not is_computer_player_black_jack and computer_player_scores < 21:
+            computer_player_win += 1
+
+    if is_computer_player_busted:
+        if not is_player_black_jack and player_scores < 21:
+            player_win += 1
+
+    if is_computer_player_busted and is_player_busted:
+        if player_scores > computer_player_scores:
+            player_win += 1
+        elif computer_player_scores > player_scores:
+            computer_player_win += 1
+        else:
+            player_win += 1
+            computer_player_win += 1
+
+    if is_player_black_jack:
+        player_win += 1
+
+    if is_computer_player_black_jack:
+        computer_player_win += 1
+
+    if is_player_black_jack and is_computer_player_black_jack:
+        player_win += 1
+        computer_player_win += 1
+
+    if player_scores < 21 and computer_player_scores < 21:
+        if player_scores > computer_player_scores:
+            player_win += 1
+        elif computer_player_scores > player_scores:
+            computer_player_win += 1
+        else:
+            player_win += 1
+            computer_player_win += 1
+
+    return player_win, computer_player_win

@@ -311,3 +311,60 @@ for val in ar_dicshen:
     under_the_line = val["name"].split(",")
     print("\x1b[36m %s" % under_the_line[1][:-2])
 '''
+'''
+arr = [{"name": "Allen Fuller", "cvv": "571", "pin": "5146"}, {"name": "Alan Dixon", "cvv": "901", "pin": "1870"},
+       {"name": "Kane Guerra", "cvv": "540", "pin": "1164"}, {"name": "Gareth Everett", "cvv": "891", "pin": "3331"},
+       {"name": "Tyler Obrien", "cvv": "167", "pin": "2155"}, {"name": "Aaron Baird", "cvv": "714", "pin": "8002"},
+       {"name": "Fulton Lester", "cvv": "806", "pin": "6688"}, {"name": "Kato Olsen", "cvv": "917", "pin": "5659"},
+       {"name": "Colorado Boone", "cvv": "650", "pin": "2326"}, {"name": "Jasper Nieves", "cvv": "852", "pin": "8444"},
+       {"name": "Xavier Glover", "cvv": "455", "pin": "1943"}, {"name": "Caleb Lambert", "cvv": "792", "pin": "4698"},
+       {"name": "Igor Nolan", "cvv": "628", "pin": "3577"}, {"name": "Emery Nolan", "cvv": "160", "pin": "5571"},
+       {"name": "Carlos Dorsey", "cvv": "778", "pin": "2415"}, {"name": "Walter Norris", "cvv": "799", "pin": "7785"},
+       {"name": "Abel Cantrell", "cvv": "454", "pin": "3673"}, {"name": "Ferris Nunez", "cvv": "496", "pin": "6781"},
+       {"name": "Alexander Nielsen", "cvv": "340", "pin": "1185"}, {"name": "Adam Mitchell", "cvv": "600", "pin": "5124"},
+       {"name": "Aladdin Wood", "cvv": "469", "pin": "2155"}, {"name": "Timon Huber", "cvv": "247", "pin": "6701"},
+       {"name": "Wayne Martin", "cvv": "903", "pin": "2012"}, {"name": "Forrest Weiss", "cvv": "877", "pin": "8241"},
+       {"name": "Garth Mccullough", "cvv": "818", "pin": "7925"}, {"name": "Tobias Schwartz", "cvv": "960", "pin": "4178"},
+       {"name": "Nissim West", "cvv": "916", "pin": "8746"}, {"name": "Nathaniel Pickett", "cvv": "617", "pin": "4312"},
+       {"name": "Aaron Pope", "cvv": "675", "pin": "6863"}, {"name": "Zephania Schwartz", "cvv": "380", "pin": "5831"},
+       {"name": "Mufutau Burch", "cvv": "727", "pin": "3514"}, {"name": "Moses Burton", "cvv": "293", "pin": "3123"},
+       {"name": "Jelani Ross", "cvv": "687", "pin": "6516"}, {"name": "Neil Daniel", "cvv": "851", "pin": "1204"},
+       {"name": "Dante Ruiz", "cvv": "166", "pin": "7900"}, {"name": "Devin Evans", "cvv": "175", "pin": "4130"},
+       {"name": "Dylan Stokes", "cvv": "431", "pin": "6902"}, {"name": "Kasimir Reyes", "cvv": "895", "pin": "5479"},
+       {"name": "Justin Swanson", "cvv": "707", "pin": "2771"}, {"name": "Mark Miles", "cvv": "912", "pin": "3649"},
+       {"name": "Lane Cortez", "cvv": "456", "pin": "6733"}, {"name": "Camden Banks", "cvv": "866", "pin": "2768"},
+       {"name": "Jakeem Harper", "cvv": "476", "pin": "1400"}, {"name": "Kyle Barron", "cvv": "497", "pin": "3321"},
+       {"name": "Yardley Avila", "cvv": "395", "pin": "7626"}, {"name": "Owen Mccray", "cvv": "519", "pin": "5460"},
+       {"name": "Maxwell Hahn", "cvv": "313", "pin": "5061"}, {"name": "Tarik Case", "cvv": "147", "pin": "6848"},
+       {"name": "Lucian Burt", "cvv": "297", "pin": "1770"}, {"name": "Julian Lloyd", "cvv": "801", "pin": "3149"},
+       {"name": "Justin Owens", "cvv": "613", "pin": "1262"}, {"name": "Jasper Moreno", "cvv": "218", "pin": "3163"},
+       {"name": "Declan Wagner", "cvv": "461", "pin": "2179"}, {"name": "Keaton Herring", "cvv": "231", "pin": "4382"},
+       {"name": "Cairo Duncan", "cvv": "120", "pin": "9718"}, {"name": "Amal Pruitt", "cvv": "684", "pin": "7276"},
+       {"name": "Sebastian Hobbs", "cvv": "872", "pin": "8339"}, {"name": "Honorato Wallace", "cvv": "781", "pin": "8081"},
+       {"name": "Octavius Cardenas", "cvv": "777", "pin": "3600"}, {"name": "Reuben Lowe", "cvv": "561", "pin": "8146"},
+       {"name": "Davis Moreno", "cvv": "149", "pin": "7955"}, {"name": "Brenden House", "cvv": "807", "pin": "1363"},
+       {"name": "Brennan Hogan", "cvv": "881", "pin": "4795"}, {"name": "Denton Richard", "cvv": "898", "pin": "1194"},
+       {"name": "Lionel Salinas", "cvv": "526", "pin": "7403"}, {"name": "Arden Ramsey", "cvv": "686", "pin": "5556"},
+       {"name": "Dieter Roberts", "cvv": "878", "pin": "1480"}, {"name": "Alec Blankenship", "cvv": "115", "pin": "6332"},
+       {"name": "Ryan Larsen", "cvv": "583", "pin": "6697"}, {"name": "Jack England", "cvv": "213", "pin": "3239"},
+       {"name": "Magee Riley", "cvv": "358", "pin": "6591"}, {"name": "Jeremy Rodriquez", "cvv": "537", "pin": "2266"},
+       {"name": "Brent Valencia", "cvv": "730", "pin": "7095"}, {"name": "Basil Mcgowan", "cvv": "180", "pin": "6289"},
+       {"name": "Jason Stevens", "cvv": "512", "pin": "6203"}, {"name": "Stuart Allison", "cvv": "152", "pin": "7522"},
+       {"name": "Adrian Cleveland", "cvv": "226", "pin": "4817"}, {"name": "Armando Jenkins", "cvv": "498", "pin": "8770"},
+       {"name": "Ivan Butler", "cvv": "361", "pin": "6244"}, {"name": "Dustin Mckee", "cvv": "818", "pin": "9750"},
+       {"name": "Boris Valencia", "cvv": "985", "pin": "7317"}, {"name": "Thaddeus Christian", "cvv": "693", "pin": "2034"},
+       {"name": "Patrick Hall", "cvv": "272", "pin": "2492"}, {"name": "Alvin Hayden", "cvv": "309", "pin": "1494"},
+       {"name": "Wing Roth", "cvv": "542", "pin": "1229"}, {"name": "Ezekiel Mayo", "cvv": "364", "pin": "5087"},
+       {"name": "Hayden Watkins", "cvv": "653", "pin": "6585"}, {"name": "Byron Pearson", "cvv": "620", "pin": "5961"},
+       {"name": "Brady Davidson", "cvv": "978", "pin": "8096"}, {"name": "Nash Barry", "cvv": "625", "pin": "6693"},
+       {"name": "Joshua Hess", "cvv": "887", "pin": "5908"}, {"name": "Felix Suarez", "cvv": "783", "pin": "9614"},
+       {"name": "Ivor Dominguez", "cvv": "986", "pin": "8847"}, {"name": "Eagan Chavez", "cvv": "620", "pin": "3364"},
+       {"name": "Michael Mercado", "cvv": "250", "pin": "1698"}, {"name": "Gabriel Fisher", "cvv": "283", "pin": "2211"},
+       {"name": "Gage Becker", "cvv": "726", "pin": "1395"}, {"name": "Ulysses Blevins", "cvv": "981", "pin": "1272"},
+       {"name": "Nathaniel Merrill", "cvv": "743", "pin": "5458"}, {"name": "Graham Craig", "cvv": "338", "pin": "2207"}]
+
+
+for val in arr:
+    if val["cvv"][0] == val["pin"][0]:
+        print(val)
+'''

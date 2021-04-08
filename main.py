@@ -2,7 +2,9 @@ import pprint
 import lib.functions as utils
 import lib.game as black_jack
 
+
 #black_jack.play()
+'''
 test1 = black_jack.eval_aces([{"name": "ace", "color": "clubs", "view": "A", "colorView": "C", "value": 11},
     {"name": "ace", "color": "spades", "view": "A", "colorView": "S", "value": 11}])
 print(test1)
@@ -44,3 +46,6 @@ test6 = black_jack.eval_aces([{"name": "jack", "color": "hearts", "view": "J", "
                               {"name": "two", "color": "spades", "view": "2", "colorView": "S", "value": 2}])
 print(test6)
 assert test6 > 21
+'''
+
+
