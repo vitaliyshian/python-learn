@@ -1,13 +1,14 @@
 '''
 Модуль
-'''
+
+
 def unique(raw, sort = False):
-    '''
-    Получает уникальние значения из масива
-    :param raw: List
-    :param sort: Boolean
-    :return: List
-    '''
+  
+
+   # Получает уникальние значения из масива
+   # :param raw: List
+   # :param sort: Boolean
+   # :return: List
     has_letter = False
     has_numeral = False
 
@@ -29,11 +30,11 @@ def unique(raw, sort = False):
     return un
 
 def is_poly(word = ''):
-    '''
-    Проверяет является ли слово полиндромом  пример-(Мадам) -
-    :param word: str
-    :return: boolean
-    '''
+
+   
+   # Проверяет является ли слово полиндромом  пример-(Мадам) -
+    #:param word: str
+   # :return: boolean
     if not isinstance(word, str):
         print("Не правильный формат данных!")
         return False
@@ -45,11 +46,11 @@ def is_poly(word = ''):
         return False
 
 def print_type(val):
-    '''
-    Выводит тип данных
-    :param val: any
-    :return: None
-    '''
+   
+   # Выводит тип данных
+   # :param val: any
+    #:return: None
+   
     if isinstance(val, str):
         print("Тип данных Строка %s" % val)
     elif isinstance(val, int):
@@ -62,11 +63,11 @@ def print_type(val):
         print("Неизвестный тип Данных!!!")
 
 def min(arr):
-    '''
-    Возвращеет минимальное число из масива
-    :param arr: list
-    :return: int | float | None
-    '''
+  
+   # Возвращеет минимальное число из масива
+   # :param arr: list
+   # :return: int | float | None
+
     if not isinstance(arr, list):
         print("Не массив!!!")
         return None
@@ -80,11 +81,11 @@ def min(arr):
     return m
 
 def max(arr):
-    '''
-    Возвращает максимальное число из масива
-    :param arr: list
-    :return: int | float | None
-    '''
+
+   # Возвращает максимальное число из масива
+   # :param arr: list
+    #:return: int | float | None
+ 
     if not isinstance(arr, list):
         print("Не массив")
         return None
@@ -98,13 +99,15 @@ def max(arr):
     return b
 
 def search(arr, user_input):
-    '''
-    Ищет совпаденя в масиве
-    :param arr: list
-    :param user_input: str
-    :return: str | None
-    '''
+  
+   # Ищет совпаденя в масиве
+   # :param arr: list
+    #:param user_input: str
+   # :return: str | None
+
     for val in arr:
         if user_input.lower() == val.lower():
             return val
     return None
+    ''''''
+'''

@@ -8,77 +8,79 @@ game = {"deck": []}
 cards = [
     # Модель данных
     # Карты двойки
-    {"name": "two", "color": "hearts", "view": "2", "colorView": "♥", "value": 2},
-    {"name": "two", "color": "diamonds", "view": "2", "colorView": "♦", "value": 2},
-    {"name": "two", "color": "clubs", "view": "2", "colorView": "♣", "value": 2},
-    {"name": "two", "color": "spades", "view": "2", "colorView": "♠", "value": 2},
+    {"name": "two", "color": "hearts", "view": "2", "colorView": "H", "value": 2},
+    {"name": "two", "color": "diamonds", "view": "2", "colorView": "D", "value": 2},
+    {"name": "two", "color": "clubs", "view": "2", "colorView": "C", "value": 2},
+    {"name": "two", "color": "spades", "view": "2", "colorView": "S", "value": 2},
     # Карты тройки
-    {"name": "three", "color": "hearts", "view": "3", "colorView": "♥", "value": 3},
-    {"name": "three", "color": "diamonds", "view": "3", "colorView": "♦", "value": 3},
-    {"name": "three", "color": "clubs", "view": "3", "colorView": "♣", "value": 3},
-    {"name": "three", "color": "spades", "view": "3", "colorView": "♠", "value": 3},
+    {"name": "three", "color": "hearts", "view": "3", "colorView": "H", "value": 3},
+    {"name": "three", "color": "diamonds", "view": "3", "colorView": "D", "value": 3},
+    {"name": "three", "color": "clubs", "view": "3", "colorView": "C", "value": 3},
+    {"name": "three", "color": "spades", "view": "3", "colorView": "S", "value": 3},
     # Карты четверки
-    {"name": "four", "color": "hearts", "view": "4", "colorView": "♥", "value": 4},
-    {"name": "four", "color": "diamonds", "view": "4", "colorView": "♦", "value": 4},
-    {"name": "four", "color": "clubs", "view": "4", "colorView": "♣", "value": 4},
-    {"name": "four", "color": "spades", "view": "4", "colorView": "♠", "value": 4},
+    {"name": "four", "color": "hearts", "view": "4", "colorView": "H", "value": 4},
+    {"name": "four", "color": "diamonds", "view": "4", "colorView": "D", "value": 4},
+    {"name": "four", "color": "clubs", "view": "4", "colorView": "C", "value": 4},
+    {"name": "four", "color": "spades", "view": "4", "colorView": "S", "value": 4},
     # Карты пятерки
-    {"name": "five", "color": "hearts", "view": "5", "colorView": "♥", "value": 5},
-    {"name": "five", "color": "diamonds", "view": "5", "colorView": "♦", "value": 5},
-    {"name": "five", "color": "clubs", "view": "5", "colorView": "♣", "value": 5},
-    {"name": "five", "color": "spades", "view": "5", "colorView": "♠", "value": 5},
+    {"name": "five", "color": "hearts", "view": "5", "colorView": "H", "value": 5},
+    {"name": "five", "color": "diamonds", "view": "5", "colorView": "D", "value": 5},
+    {"name": "five", "color": "clubs", "view": "5", "colorView": "C", "value": 5},
+    {"name": "five", "color": "spades", "view": "5", "colorView": "S", "value": 5},
     # Карты шестерки
-    {"name": "six", "color": "hearts", "view": "6", "colorView": "♥", "value": 6},
-    {"name": "six", "color": "diamonds", "view": "6", "colorView": "♦", "value": 6},
-    {"name": "six", "color": "clubs", "view": "6", "colorView": "♣", "value": 6},
-    {"name": "six", "color": "spades", "view": "6", "colorView": "♠", "value": 6},
+    {"name": "six", "color": "hearts", "view": "6", "colorView": "H", "value": 6},
+    {"name": "six", "color": "diamonds", "view": "6", "colorView": "D", "value": 6},
+    {"name": "six", "color": "clubs", "view": "6", "colorView": "C", "value": 6},
+    {"name": "six", "color": "spades", "view": "6", "colorView": "S", "value": 6},
     # Карты семерки
-    {"name": "seven", "color": "hearts", "view": "7", "colorView": "♥", "value": 7},
-    {"name": "seven", "color": "diamonds", "view": "7", "colorView": "♦", "value": 7},
-    {"name": "seven", "color": "clubs", "view": "7", "colorView": "♣", "value": 7},
-    {"name": "seven", "color": "spades", "view": "7", "colorView": "♠", "value": 7},
+    {"name": "seven", "color": "hearts", "view": "7", "colorView": "H", "value": 7},
+    {"name": "seven", "color": "diamonds", "view": "7", "colorView": "D", "value": 7},
+    {"name": "seven", "color": "clubs", "view": "7", "colorView": "C", "value": 7},
+    {"name": "seven", "color": "spades", "view": "7", "colorView": "S", "value": 7},
     # Карты восьмерки
-    {"name": "eight", "color": "hearts", "view": "8", "colorView": "♥", "value": 8},
-    {"name": "eight", "color": "diamonds", "view": "8", "colorView": "♦", "value": 8},
-    {"name": "eight", "color": "clubs", "view": "8", "colorView": "♣", "value": 8},
-    {"name": "eight", "color": "spades", "view": "8", "colorView": "♠", "value": 8},
+    {"name": "eight", "color": "hearts", "view": "8", "colorView": "H", "value": 8},
+    {"name": "eight", "color": "diamonds", "view": "8", "colorView": "D", "value": 8},
+    {"name": "eight", "color": "clubs", "view": "8", "colorView": "C", "value": 8},
+    {"name": "eight", "color": "spades", "view": "8", "colorView": "S", "value": 8},
     # Карты девятки
-    {"name": "nine", "color": "hearts", "view": "9", "colorView": "♥", "value": 9},
-    {"name": "nine", "color": "diamonds", "view": "9", "colorView": "♦", "value": 9},
-    {"name": "nine", "color": "clubs", "view": "9", "colorView": "♣", "value": 9},
-    {"name": "nine", "color": "spades", "view": "9", "colorView": "♠", "value": 9},
+    {"name": "nine", "color": "hearts", "view": "9", "colorView": "H", "value": 9},
+    {"name": "nine", "color": "diamonds", "view": "9", "colorView": "D", "value": 9},
+    {"name": "nine", "color": "clubs", "view": "9", "colorView": "C", "value": 9},
+    {"name": "nine", "color": "spades", "view": "9", "colorView": "S", "value": 9},
     # Карты десятки
-    {"name": "ten", "color": "hearts", "view": "X", "colorView": "♥", "value": 10},
-    {"name": "ten", "color": "diamonds", "view": "X", "colorView": "♦", "value": 10},
-    {"name": "ten", "color": "clubs", "view": "X", "colorView": "♣", "value": 10},
-    {"name": "ten", "color": "spades", "view": "X", "colorView": "♠", "value": 10},
+    {"name": "ten", "color": "hearts", "view": "X", "colorView": "H", "value": 10},
+    {"name": "ten", "color": "diamonds", "view": "X", "colorView": "D", "value": 10},
+    {"name": "ten", "color": "clubs", "view": "X", "colorView": "C", "value": 10},
+    {"name": "ten", "color": "spades", "view": "X", "colorView": "S", "value": 10},
     # Карты вальты
-    {"name": "jack", "color": "hearts", "view": "J", "colorView": "♥", "value": 10},
-    {"name": "jack", "color": "diamonds", "view": "J", "colorView": "♦", "value": 10},
-    {"name": "jack", "color": "clubs", "view": "J", "colorView": "♣", "value": 10},
-    {"name": "jack", "color": "spades", "view": "J", "colorView": "♠", "value": 10},
+    {"name": "jack", "color": "hearts", "view": "J", "colorView": "H", "value": 10},
+    {"name": "jack", "color": "diamonds", "view": "J", "colorView": "D", "value": 10},
+    {"name": "jack", "color": "clubs", "view": "J", "colorView": "C", "value": 10},
+    {"name": "jack", "color": "spades", "view": "J", "colorView": "S", "value": 10},
     # Карты дамы
-    {"name": "queen", "color": "hearts", "view": "Q", "colorView": "♥", "value": 10},
-    {"name": "queen", "color": "diamonds", "view": "Q", "colorView": "♦", "value": 10},
-    {"name": "queen", "color": "clubs", "view": "Q", "colorView": "♣", "value": 10},
-    {"name": "queen", "color": "spades", "view": "Q", "colorView": "♠", "value": 10},
+    {"name": "queen", "color": "hearts", "view": "Q", "colorView": "H", "value": 10},
+    {"name": "queen", "color": "diamonds", "view": "Q", "colorView": "D", "value": 10},
+    {"name": "queen", "color": "clubs", "view": "Q", "colorView": "C", "value": 10},
+    {"name": "queen", "color": "spades", "view": "Q", "colorView": "S", "value": 10},
     # Карты короли
-    {"name": "king", "color": "hearts", "view": "K", "colorView": "♥", "value": 10},
-    {"name": "king", "color": "diamonds", "view": "K", "colorView": "♦", "value": 10},
-    {"name": "king", "color": "clubs", "view": "K", "colorView": "♣", "value": 10},
-    {"name": "king", "color": "spades", "view": "K", "colorView": "♠", "value": 10},
+    {"name": "king", "color": "hearts", "view": "K", "colorView": "H", "value": 10},
+    {"name": "king", "color": "diamonds", "view": "K", "colorView": "D", "value": 10},
+    {"name": "king", "color": "clubs", "view": "K", "colorView": "C", "value": 10},
+    {"name": "king", "color": "spades", "view": "K", "colorView": "S", "value": 10},
     # Тузы
-    {"name": "ace", "color": "hearts", "view": "A", "colorView": "♥", "value": (11, 1)},# кортеж
-    {"name": "ace", "color": "diamonds", "view": "A", "colorView": "♦", "value": (11, 1)},
-    {"name": "ace", "color": "clubs", "view": "A", "colorView": "♣", "value": (11, 1)},
-    {"name": "ace", "color": "spades", "view": "A", "colorView": "♠", "value": (11, 1)},
+    {"name": "ace", "color": "hearts", "view": "A", "colorView": "H", "value": 11},
+    {"name": "ace", "color": "diamonds", "view": "A", "colorView": "D", "value": 11},
+    {"name": "ace", "color": "clubs", "view": "A", "colorView": "C", "value": 11},
+    {"name": "ace", "color": "spades", "view": "A", "colorView": "S", "value": 11},
 ]
 
 def play():
-   return None
+    start_game()
+    player_turn()
 
 def player_turn():
-   return None
+    value = sum(player["cards_on_hands"])
+    print(value)
 
 def computer_turn():
     return None
@@ -108,6 +110,17 @@ def print_card(card):
     print("|      %s |" % card["view"])
     print("%s--------%s" % (card["colorView"], card["colorView"]))
 
+def draw_cards(cards):
+    lines = ["", "", "", "", ""]
+    for card in cards:
+        lines[0] = lines[0] + "  " + "%s--------%s" % (card["colorView"], card["colorView"])
+        lines[1] = lines[1] + "  " + "| %s      |" % card["view"]
+        lines[2] = lines[2] + "  " + "|        |"
+        lines[3] = lines[3] + "  " + "|      %s |" % card["view"]
+        lines[4] = lines[4] + "  " + "%s--------%s" % (card["colorView"], card["colorView"])
+    for line in lines:
+        print(line)
+
 def print_menu():
     print("============================================")
     print("♥♦♣♠            BLACK JACK            ♥♦♣♠")
@@ -122,13 +135,26 @@ def print_player_cards():
     print("%s вы имеете на руках" % player["name"])
     print("============================================")
 
-    for val in player["cards_on_hands"]:
-        print_card(val)
+    draw_cards(player["cards_on_hands"])
 
 def print_computer_cards():
     print("============================================")
     print("%s имеет на руках" % computer_player["name"])
     print("============================================")
 
-    for val in computer_player["cards_on_hands"]:
-        print_card(val)
+    draw_cards(computer_player["cards_on_hands"])
+
+def sum(hand):
+    value = 0
+    for card in hand:
+        value = value + card["value"]
+    return value
+
+def eval_aces(hand):
+    value = sum(hand)
+    for card in hand:
+        if value > 21 and card["name"] == "ace":
+            card["value"] = 1
+            value = sum(hand)
+    return value
+

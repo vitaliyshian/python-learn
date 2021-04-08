@@ -1,5 +1,8 @@
 # dictionary Словарь
-import pprint
+#import pprint
+#import json
+#import pprint
+#import datetime
 
 '''
 phonebook = {}
@@ -151,103 +154,7 @@ users = [{"email": "a@libero.org", "name": "Linus Weeks", "phone": "07711 543497
 for val in users:
     print("пользователь с именем: %s имеет email: %s и телефон: %s" % (val["name"], val["email"], val["phone"]))
 '''
-
-parcels = [{"city": "Venezia", "company": "Pede Nec Foundation", "siret": "315695304-00008", "country": "Nepal"},
-           {"city": "Tauranga", "company": "Diam Ltd", "siret": "858465677-00004", "country": "Venezuela"},
-           {"city": "Blagoveshchensk", "company": "Blandit Congue In Consulting", "siret": "552681876-00009",
-            "country": "Chad"}, {"city": "Saltillo", "company": "Quisque Limited", "siret": "373959469-00009",
-                                 "country": "Pitcairn Islands"},
-           {"city": "Perth", "company": "Nibh Quisque Nonummy Ltd", "siret": "526917463-00006", "country": "Cyprus"},
-           {"city": "Peine", "company": "Magna Malesuada Vel Industries", "siret": "558528956-00003",
-            "country": "Botswana"},
-           {"city": "Patos", "company": "Sem Corp.", "siret": "322068065-00000", "country": "Palestine, State of"},
-           {"city": "Moio Alcantara", "company": "Ipsum Institute", "siret": "695288795-00005", "country": "Palau"},
-           {"city": "Ciudad Madero", "company": "Lectus Cum LLC", "siret": "547399808-00005",
-            "country": "Saint Helena, Ascension and Tristan da Cunha"},
-           {"city": "Sacramento", "company": "Augue Company", "siret": "740365895-00003", "country": "Faroe Islands"},
-           {"city": "New Bombay", "company": "Orci Luctus PC", "siret": "613761238-00005", "country": "Japan"},
-           {"city": "Wekweti", "company": "Amet Ornare Ltd", "siret": "799809694-00000", "country": "El Salvador"},
-           {"city": "Penrith", "company": "Odio Sagittis Incorporated", "siret": "118503770-00000", "country": "Gabon"},
-           {"city": "Köthen", "company": "Dolor Limited", "siret": "105229439-00002", "country": "Hong Kong"},
-           {"city": "Moignelee", "company": "Ornare Lectus Corp.", "siret": "668465891-00004",
-            "country": "Cook Islands"},
-           {"city": "Tramutola", "company": "Et LLC", "siret": "066460676-00001", "country": "Czech Republic"},
-           {"city": "Merdorp", "company": "Odio A Limited", "siret": "732498845-00005",
-            "country": "Russian Federation"},
-           {"city": "Latinne", "company": "Urna Incorporated", "siret": "297140006-00000", "country": "Isle of Man"},
-           {"city": "Saint Paul", "company": "Purus Sapien Consulting", "siret": "151220514-00005",
-            "country": "French Guiana"},
-           {"city": "Märsta", "company": "Pharetra Corp.", "siret": "526549506-00008", "country": "Jordan"},
-           {"city": "Ledbury", "company": "Diam Pellentesque Limited", "siret": "829945575-00001",
-            "country": "Bosnia and Herzegovina"},
-           {"city": "Bikaner", "company": "Mauris Magna Consulting", "siret": "215974627-00006",
-            "country": "Dominican Republic"},
-           {"city": "Roosendaal", "company": "Tempor Foundation", "siret": "620933192-00002",
-            "country": "French Southern Territories"},
-           {"city": "Portobuffolè", "company": "Dictum Institute", "siret": "509693529-00000", "country": "Vanuatu"},
-           {"city": "Rochester", "company": "Leo Cras Vehicula Industries", "siret": "321588246-00009",
-            "country": "Sudan"},
-           {"city": "Lampernisse", "company": "Eget Institute", "siret": "498673466-00005", "country": "China"},
-           {"city": "La Unión", "company": "Ultricies Adipiscing Corp.", "siret": "564409985-00004",
-            "country": "Saint Vincent and The Grenadines"},
-           {"city": "Paranaguá", "company": "Ipsum Dolor Sit Consulting", "siret": "571863562-00005",
-            "country": "Sint Maarten"},
-           {"city": "Rixensart", "company": "Non Arcu Company", "siret": "455032284-00008", "country": "Algeria"},
-           {"city": "Heppenheim", "company": "Praesent Eu Nulla Foundation", "siret": "284882438-00005",
-            "country": "Åland Islands"},
-           {"city": "Hoorn", "company": "Adipiscing Industries", "siret": "635076862-00005", "country": "Colombia"},
-           {"city": "Auvelais", "company": "Amet Risus Corporation", "siret": "743581514-00002",
-            "country": "Montenegro"}, {"city": "Chekhov", "company": "Pellentesque LLP", "siret": "322624974-00000",
-                                       "country": "United States Minor Outlying Islands"},
-           {"city": "Probolinggo", "company": "Interdum Feugiat Sed Industries", "siret": "169447091-00003",
-            "country": "Israel"},
-           {"city": "Bad Nauheim", "company": "Vestibulum Accumsan Neque PC", "siret": "019138924-00006",
-            "country": "Anguilla"},
-           {"city": "Wenduine", "company": "Orci Ltd", "siret": "527818850-00002", "country": "Kazakhstan"},
-           {"city": "Donstiennes", "company": "Cum LLP", "siret": "119460202-00003", "country": "Cook Islands"},
-           {"city": "Torgny", "company": "Odio Inc.", "siret": "299070896-00004", "country": "Greece"},
-           {"city": "Victor Harbor", "company": "A Magna Lorem LLC", "siret": "545731093-00005",
-            "country": "Bonaire, Sint Eustatius and Saba"},
-           {"city": "Louisville", "company": "Ante Lectus Convallis Limited", "siret": "549743672-00004",
-            "country": "Sierra Leone"},
-           {"city": "Lolol", "company": "Malesuada Fringilla Est Corporation", "siret": "900840109-00004",
-            "country": "Saint Martin"},
-           {"city": "Kitchener", "company": "Aliquet Limited", "siret": "170139489-00000", "country": "Portugal"},
-           {"city": "Overland Park", "company": "At Corp.", "siret": "363220112-00009", "country": "Luxembourg"},
-           {"city": "Concón", "company": "Luctus Sit Associates", "siret": "089342356-00006",
-            "country": "Dominican Republic"},
-           {"city": "Daska", "company": "Dictum Cursus Nunc Industries", "siret": "674498845-00009", "country": "Togo"},
-           {"city": "Cabras", "company": "Purus Maecenas Libero Industries", "siret": "200414365-00003",
-            "country": "Micronesia"}, {"city": "Castanhal", "company": "Turpis Non Ltd", "siret": "499083798-00003",
-                                       "country": "Falkland Islands"},
-           {"city": "Santander de Quilichao", "company": "Metus LLP", "siret": "315487140-00008", "country": "Ireland"},
-           {"city": "Pazarcık", "company": "Nulla Donec LLC", "siret": "180080947-00005",
-            "country": "Equatorial Guinea"},
-           {"city": "Turgutlu", "company": "Viverra Incorporated", "siret": "122232457-00004", "country": "Moldova"},
-           {"city": "Thanjavur", "company": "Nunc Ac Mattis LLC", "siret": "526034111-00009", "country": "Syria"},
-           {"city": "Renfrew", "company": "At Risus Nunc Ltd", "siret": "161824057-00004", "country": "Mozambique"},
-           {"city": "Siculiana", "company": "Cras Ltd", "siret": "811288505-00001", "country": "Puerto Rico"},
-           {"city": "Perpignan", "company": "Neque Tellus Company", "siret": "485901888-00001", "country": "Benin"},
-           {"city": "Sheffield", "company": "Nec Tellus Limited", "siret": "392701256-00001", "country": "Italy"},
-           {"city": "Blenheim", "company": "Nisi Corporation", "siret": "614419984-00008", "country": "Hungary"},
-           {"city": "Detroit", "company": "Ut Institute", "siret": "346092950-00002", "country": "Czech Republic"},
-           {"city": "Poza Rica", "company": "Aliquam Nisl Nulla Foundation", "siret": "040516197-00007",
-            "country": "South Georgia and The South Sandwich Islands"},
-           {"city": "Dumai", "company": "Eget Laoreet Posuere Corporation", "siret": "793097163-00000",
-            "country": "Japan"},
-           {"city": "San Giovanni Suergiu", "company": "Non Lorem Incorporated", "siret": "607876851-00009",
-            "country": "Guernsey"},
-           {"city": "Raigarh", "company": "Urna Corporation", "siret": "148351927-00006", "country": "Benin"},
-           {"city": "A Coruña", "company": "Vitae Aliquet Nec LLP", "siret": "682669452-00000",
-            "country": "Falkland Islands"},
-           {"city": "Hasselt", "company": "Aliquam Corporation", "siret": "491891487-00002",
-            "country": "Holy See (Vatican City State)"},
-           {"city": "Geel", "company": "At Augue Industries", "siret": "327467734-00007", "country": "Poland"},
-           {"city": "Altmünster", "company": "Lobortis Nisi Ltd", "siret": "844334359-00008", "country": "Costa Rica"},
-           {"city": "Comblain-Fairon", "company": "Mauris Blandit Inc.", "siret": "101217990-00007",
-            "country": "Cambodia"},
-           {"city": "Kohistan", "company": "Posuere Cubilia Consulting", "siret": "061977997-00008",
-            "country": "Senegal"},
+'''
            {"city": "Bhimavaram", "company": "Tincidunt Adipiscing Mauris LLC", "siret": "020600490-00005",
             "country": "Korea, North"},
            {"city": "Guri", "company": "Ornare Elit PC", "siret": "989772074-00005", "country": "Sint Maarten"},
@@ -257,47 +164,9 @@ parcels = [{"city": "Venezia", "company": "Pede Nec Foundation", "siret": "31569
             "country": "United Kingdom (Great Britain)"},
            {"city": "Bolano", "company": "Odio PC", "siret": "766317697-00007", "country": "Saint Kitts and Nevis"},
            {"city": "Pickering", "company": "Tellus Suspendisse Sed Inc.", "siret": "610832248-00005",
-            "country": "Madagascar"},
-           {"city": "Fort William", "company": "Varius Nam Porttitor PC", "siret": "411277551-00007",
-            "country": "South Georgia and The South Sandwich Islands"},
-           {"city": "Bokaro Steel City", "company": "Tempor Lorem Incorporated", "siret": "645424680-00009",
-            "country": "Jersey"},
-           {"city": "Barrie", "company": "Aliquam Foundation", "siret": "878097450-00000", "country": "Hungary"},
-           {"city": "Dégelis", "company": "Dolor Vitae Company", "siret": "286642814-00003", "country": "Iceland"},
-           {"city": "Osogbo", "company": "Non Consulting", "siret": "297237232-00006", "country": "Tuvalu"},
-           {"city": "San Gregorio nelle Alpi", "company": "Non Nisi LLP", "siret": "505371369-00008",
-            "country": "Guadeloupe"},
-           {"city": "Quinta de Tilcoco", "company": "Curabitur Massa PC", "siret": "385205612-00000",
-            "country": "Bouvet Island"},
-           {"city": "Loppem", "company": "Arcu Eu Odio LLC", "siret": "243702552-00007", "country": "Faroe Islands"},
-           {"city": "Newton Stewart", "company": "Enim Etiam Gravida LLC", "siret": "431713585-00005",
-            "country": "Taiwan"},
-           {"city": "Rocourt", "company": "Libero Institute", "siret": "681248407-00006", "country": "Singapore"},
-           {"city": "Gagliano del Capo", "company": "Hendrerit Neque Limited", "siret": "400520490-00006",
-            "country": "Indonesia"},
-           {"city": "Florianópolis", "company": "Mattis Integer Foundation", "siret": "954778247-00005",
-            "country": "Grenada"},
-           {"city": "Sant'Angelo Limosano", "company": "Lorem Associates", "siret": "334033826-00002",
-            "country": "Malaysia"},
-           {"city": "Coalhurst", "company": "Dis Parturient Montes Foundation", "siret": "103883344-00006",
-            "country": "Kuwait"},
-           {"city": "Thon", "company": "Proin Velit Sed Corp.", "siret": "076470988-00007", "country": "Guam"},
-           {"city": "Petorca", "company": "Velit In Aliquet Company", "siret": "165313685-00001",
-            "country": "Bonaire, Sint Eustatius and Saba"},
-           {"city": "Suxy", "company": "Dictum Incorporated", "siret": "632741658-00009", "country": "Burundi"},
-           {"city": "Paço do Lumiar", "company": "Lectus Pede Incorporated", "siret": "088189196-00004",
-            "country": "Faroe Islands"},
-           {"city": "Hildesheim", "company": "Eu Erat Semper Limited", "siret": "826212938-00003", "country": "Guyana"},
-           {"city": "Niel-bij-As", "company": "Mauris Elit Dictum PC", "siret": "916344237-00000",
-            "country": "Turkmenistan"},
-           {"city": "Piotrków Trybunalski", "company": "Neque In Ornare Corporation", "siret": "871909727-00004",
-            "country": "Qatar"},
-           {"city": "Harrisburg", "company": "Vitae Company", "siret": "409595485-00007", "country": "Egypt"},
-           {"city": "Mumbai", "company": "Lacus Incorporated", "siret": "665106001-00001", "country": "Burkina Faso"},
-           {"city": "Tranent", "company": "At Limited", "siret": "828668988-00003", "country": "Korea, South"},
-           {"city": "Parndorf", "company": "Ultrices LLP", "siret": "662907617-00002", "country": "Indonesia"},
-           {"city": "Rimbey", "company": "Pellentesque Industries", "siret": "136125614-00000", "country": "Slovakia"}]
-
+            "country": "Madagascar"}, 
+       ]
+'''
 # Полиморфная функция поиска Посилок по ключу значению
 '''
 def search_country(arr, key, value):
@@ -374,15 +243,14 @@ print(sampleDict["class"]["student"]["marks"]["history"]) # Получить his
 print(sampleDict["class"]["student"]["name"])# Получить "name":"Mike", из Словаря !!!!!!
 '''
 
-import json
-import pprint
-import datetime
 
-
+'''
 with open('sample/data.json', 'r') as f:
     upwork_data = json.load(f)
 
 jobs = upwork_data["searchResults"]["jobs"]
+'''
+
 '''
 for job in jobs:
     print(job["title"])
@@ -403,4 +271,43 @@ for job in jobs:
     print(job["client"]["totalFeedback"])
     print("\n")
 
+'''
+'''
+# Выводим именеа из словаря
+ar_dicshen = [{"name": "Madden, Dai X."}, {"name": "Franco, Ariana N."}, {"name": "Colon, Uma W."}, {"name": "Hampton, Hedda R."},
+ {"name": "Noel, Brittany Y."}, {"name": "Patterson, Yuri L."}, {"name": "Vincent, Meghan W."},
+ {"name": "Christian, Shad E."}, {"name": "Norman, Rogan Q."}, {"name": "Hawkins, Perry S."},
+ {"name": "Joyce, Eagan W."}, {"name": "Dawson, Shoshana F."}, {"name": "Strickland, Peter F."},
+ {"name": "Deleon, Kirsten D."}, {"name": "Barton, Barry D."}, {"name": "Meyer, Gregory O."},
+ {"name": "Shannon, Judith F."}, {"name": "Sanchez, Nehru U."}, {"name": "Avila, Gemma H."},
+ {"name": "Macias, Bradley T."}, {"name": "Cole, Charlotte K."}, {"name": "Cunningham, Rashad X."},
+ {"name": "Carver, Reese E."}, {"name": "Hamilton, Yuli F."}, {"name": "Ayala, Jasmine J."},
+ {"name": "Kim, Zephania R."}, {"name": "Guthrie, TaShya R."}, {"name": "Hoover, Callum I."},
+ {"name": "Shepherd, Aidan R."}, {"name": "Cain, Linus E."}, {"name": "Wall, Alana I."}, {"name": "Mcdaniel, Colin Y."},
+ {"name": "Herring, Nichole F."}, {"name": "Jenkins, Aspen P."}, {"name": "Lambert, Deanna F."},
+ {"name": "Keller, Scott K."}, {"name": "Mueller, Keaton S."}, {"name": "Valenzuela, Addison K."},
+ {"name": "Harrison, Murphy L."}, {"name": "Massey, Guy H."}, {"name": "Cotton, Amal S."}, {"name": "Miles, Shad V."},
+ {"name": "May, Herrod O."}, {"name": "Burgess, Britanney V."}, {"name": "Koch, Chase D."},
+ {"name": "Fleming, Hope R."}, {"name": "Bradshaw, Hilary T."}, {"name": "Ryan, Lila F."},
+ {"name": "Allison, Meghan Q."}, {"name": "Hardin, Ursula A."}, {"name": "Logan, Joel E."}, {"name": "Oneill, Axel T."},
+ {"name": "Mcgee, Matthew R."}, {"name": "English, Zenaida Z."}, {"name": "Kirk, Nina X."},
+ {"name": "Compton, Rooney E."}, {"name": "Peck, Garrett Q."}, {"name": "Ratliff, Price N."},
+ {"name": "Gonzalez, Oprah E."}, {"name": "Mcdaniel, Price H."}, {"name": "William, Rigel Z."},
+ {"name": "Berg, Amery W."}, {"name": "Cardenas, McKenzie T."}, {"name": "York, Ferris M."},
+ {"name": "Harper, Camilla A."}, {"name": "Callahan, Carolyn W."}, {"name": "Lynn, Helen E."},
+ {"name": "Hampton, Gary C."}, {"name": "Gillespie, Virginia N."}, {"name": "Witt, Ira Y."},
+ {"name": "Vasquez, Dillon Y."}, {"name": "Casey, Paula K."}, {"name": "Conley, Kim V."}, {"name": "Hobbs, Grace P."},
+ {"name": "Russell, Aretha V."}, {"name": "Alston, McKenzie I."}, {"name": "Sullivan, Fritz R."},
+ {"name": "Garza, Olga H."}, {"name": "Mathews, Clinton P."}, {"name": "Stephenson, Vivian W."},
+ {"name": "Mullen, Giselle Q."}, {"name": "Griffin, Ina L."}, {"name": "Forbes, Jena T."},
+ {"name": "Collins, Illiana Z."}, {"name": "Lawson, Samson A."}, {"name": "Monroe, Tana V."},
+ {"name": "Newman, Murphy M."}, {"name": "Ortiz, Joshua F."}, {"name": "Arnold, Mona P."},
+ {"name": "Campbell, Kitra R."}, {"name": "Mccarty, Eliana M."}, {"name": "Dillon, Driscoll U."},
+ {"name": "Odonnell, Carla K."}, {"name": "Powers, Marsden I."}, {"name": "Cummings, Norman Y."},
+ {"name": "Lowe, Illiana X."}, {"name": "Leblanc, Alan U."}, {"name": "Turner, Alice G."},
+ {"name": "Hendricks, Scarlett D."}, {"name": "Medina, Vivien N."}]
+
+for val in ar_dicshen:
+    under_the_line = val["name"].split(",")
+    print("\x1b[36m %s" % under_the_line[1][:-2])
 '''
